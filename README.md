@@ -40,23 +40,11 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 - 下载完成后，把sdl下 的cmake 整个文件夹 解压到 mingw目录下
 - 把sdl下的 x86_64-w64-mingw32 整个解压到mingw目录下
 
-
-
-
-
 ## 编译方法
 - 进入 lv_port_pc 下的 build 文件夹 下按住shift 点击鼠标右键，打开powershell
 - 输入 `cmake -G "MinGW Makefiles" .. ` 回车
 - 输入mingw 按tab 补齐。会有 ` mingw32-make.exe` 直接执行，开始编译
 - 编译成功，会在 工程目录\bin 下生成一个可执行文件，运行会报错说找不到 SDL2.dll , 把前面下载的SDL压缩包找到SDL2.dll复制到可执行文件的同一目录即可
-
-
-
-
-
-
-
-
 
 # 移植过程
 本例已经是移植好的例子，不需要再移植，如果需要了解完整过程，如下说明。
