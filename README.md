@@ -37,7 +37,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ## 编译方法
 - 进入 lv_port_pc 下的 build 文件夹 下按住shift 点击鼠标右键，打开powershell
 - 按照 步骤 1如图
-<img width="1417" height="1223" alt="image" src="https://github.com/user-attachments/assets/0e1ac2b9-7fcb-4d80-8388-93f804294b0d" />
+<img width="50%" alt="image" src="https://github.com/user-attachments/assets/0e1ac2b9-7fcb-4d80-8388-93f804294b0d" />
 
 - 输入mingw 按tab 补齐。会有 ` mingw32-make.exe` 直接执行，开始编译
 - 编译成功，会在 工程目录\bin 下生成一个可执行文件，运行会报错说找不到 SDL2.dll , 把前面下载的SDL压缩包找到SDL2.dll复制到可执行文件的同一目录即可
