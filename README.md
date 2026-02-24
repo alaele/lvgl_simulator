@@ -6,6 +6,7 @@
 - 需要c编译环境
 - 需要sdl库的支持
 - 提供一个整合好的环境工具集合链接:(https://wwbvx.lanzouw.com/b00186temh)
+
 ### windows的cmake安装
 - 官网的下载地址为 (https://cmake.org/download/)
 - 在Binary distributions  下找：这是二进制文件，也就是官方帮你编译好的可以直接执行的文件
@@ -39,6 +40,9 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 - 输入mingw 按tab 补齐。会有 ` mingw32-make.exe` 直接执行，开始编译
 - 编译成功，会在 工程目录\bin 下生成一个可执行文件，运行会报错说找不到 SDL2.dll , 把前面下载的SDL压缩包找到SDL2.dll复制到可执行文件的同一目录即可
 
+
+------------------------------------------------------------------------------------------------------------
+
 # 移植过程(不重要)
 本例已经是移植好的例子，不需要再移植，如果需要了解完整过程，如下说明。
 ## 下载 LVGL源码 
@@ -58,9 +62,4 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 - 把 lv_drives 解压，把文件夹名改为lv_drivers ,替换到 lv_port_pc_eclipse 下
 - 打开 lv_conf.h 修改 LV_GRAD_CACHE_DEF_SIZE为512 避免报错
 - 如果运行提示错误 **lv_timer_handler: It seems lv_tick_inc() is not called** ，那就在while 循环中添加 `lv_tick_inc(5);`
-
-
-
-
-
 
