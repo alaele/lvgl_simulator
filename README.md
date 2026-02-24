@@ -5,6 +5,7 @@
 - 需要 cmake
 - 需要c编译环境
 - 需要sdl库的支持
+- 提供一个整合好的环境工具集合链接:(https://wwbvx.lanzouw.com/b00186temh)
 ### windows的cmake安装
 - 官网的下载地址为 (https://cmake.org/download/)
 - 在Binary distributions  下找：这是二进制文件，也就是官方帮你编译好的可以直接执行的文件
