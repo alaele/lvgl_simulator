@@ -1,4 +1,4 @@
-# windows_lvgl8
+# windows_lvgl 仿真
 ## 说明
 关于LVGL模拟器的说明
 ## 运行环境
@@ -8,16 +8,10 @@
 - 提供一个整合好的环境工具集合链接:(https://wwbvx.lanzouw.com/b00186temh)
 
 ### windows的cmake安装
-- 官网的下载地址为 (https://cmake.org/download/)
-- 在Binary distributions  下找：这是二进制文件，也就是官方帮你编译好的可以直接执行的文件
-- Windows x64 Installer 为安装版(后缀.msi)；  Windows x64 ZIP(后缀.zip)   非安装版
-
-
+- 直接在上述链接下载cmake，解压即用
 
 ## windows的c编译环境安装
 - windows不同于linux，本身并不具备c的编译环境，所以需要单独安装mingw以支持c编译环境
-- 下载地址(https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/)
-- 版本有很多，我不解释了，有兴趣自己查区别
 - 解压后需要添加环境变量 ：我的电脑->属性->高级系统设置->环境变量->系统变量->Path添加路径
 - 路径例如 `D:\software\mingw64\bin`
 - 安装完成后，打开windows命令行 输入如下命令测试 : `gcc --version` 会看到如下信息，表示成功，否则失败
@@ -30,7 +24,6 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
 ## SDL库的支持添加
-- github下载地址为(https://github.com/libsdl-org/SDL)
 - 下载完成后，把sdl下 的cmake 整个文件夹 解压到 mingw目录下
 - 把sdl下的 x86_64-w64-mingw32 整个解压到mingw目录下
 
@@ -61,10 +54,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ## 下载工程源码
 - 官方地址(https://github.com/lvgl/lv_port_pc_eclipse/tags)
 
-## 个人链接
-- 链接如下 (https://www.123865.com/s/CI9ITd-VCEY3)
-
-## lvgl 文件移植
+## 开始移植
 - 解压lv_port_pc_eclipse-8.2.0.zip 得到 lv_port_pc_eclipse
 - 把lvgl源码解压，把文件夹名改为lvgl ,替换到 lv_port_pc_eclipse 下
 - 把 lv_drives 解压，把文件夹名改为lv_drivers ,替换到 lv_port_pc_eclipse 下
