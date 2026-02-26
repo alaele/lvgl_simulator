@@ -35,7 +35,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 - 把sdl下的 x86_64-w64-mingw32 整个解压到mingw目录下
 
 ## 编译方法
-- 进入 lv_port_pc 下的 build 文件夹 下按住shift 点击鼠标右键，打开powershell
+- 新建文件夹build,进入 lv_port_pc 下的 build 文件夹 下按住shift 点击鼠标右键，打开powershell
 - 按照 步骤 1如图
 <img width="50%" alt="image" src="https://github.com/user-attachments/assets/0e1ac2b9-7fcb-4d80-8388-93f804294b0d" />
 
